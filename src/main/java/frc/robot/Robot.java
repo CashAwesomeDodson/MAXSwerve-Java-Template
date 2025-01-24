@@ -88,7 +88,12 @@ public class Robot extends TimedRobot {
 
   /** This function is called periodically during operator control. */
   @Override
-  public void teleopPeriodic() {}
+  public void teleopPeriodic() {
+  // temp placement of the solenoid controller/button
+    if (m_driverController.getYButtonPressed()) {
+    m_solenoid.toggle();
+    }
+  }
 
   @Override
   public void testInit() {
