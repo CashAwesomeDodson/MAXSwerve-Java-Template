@@ -38,6 +38,9 @@ public class RobotContainer {
   // The driver's controller
   XboxController m_driverController = new XboxController(OIConstants.kDriverControllerPort);
 
+  // Solenoid definer 
+   public final Solenoid m_solenoid = new Solenoid(PneumaticsModuleType.REVPH, 0);
+
   /**
    * The container for the robot. Contains subsystems, OI devices, and commands.
    */
